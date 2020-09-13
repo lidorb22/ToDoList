@@ -191,3 +191,154 @@ p{
 }
 
 /* the last place end */
+
+@media only screen and (max-width: 1100px){
+    /* For tablets: */
+    body{
+        background: grey;
+    }
+    main{
+        display: grid;
+        min-height: none;
+        grid-template-columns:  1fr;
+        grid-template-rows: 185px 1fr;
+    }
+    .page{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        overflow: auto;
+    }
+    .liststyle{
+        overflow:hidden;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .tein{
+        height: 50px;
+    }
+    .subutt{
+        margin:-10px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    h2{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 1rem;
+        align-self: end;
+    }
+    h3{
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .todo-con{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .todo{
+        font-size: 2rem;
+    }
+    .trash-btn, .complete-btn{
+        padding: 1rem;
+    }
+    .completed{
+        background: lightgreen;
+    }
+    footer{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 25% 1fr 25%;
+    }
+    p{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 1.2rem;
+        margin: 0;
+        padding:20px;
+        
+    }
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    body{
+        background: grey;
+    }
+    main{
+        display: grid;
+        min-height: none;
+        grid-template-columns:  1fr;
+        grid-template-rows: 185px 1fr;
+    }
+    .page{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        overflow: auto;
+    }
+    .liststyle{
+        overflow:hidden;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .tein{
+        height: 50px;
+    }
+    .subutt{
+        margin:-10px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    h2{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 1rem;
+        align-self: end;
+    }
+    h3{
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .todo-con{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .todo{
+        font-size: 1.1rem;
+    }
+    .trash-btn, .complete-btn{
+        padding: 0.5rem;
+    }
+    .completed{
+        background: lightgreen;
+    }
+    footer{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 25% 1fr 25%;
+    }
+    p{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 0.8rem;
+        margin: 0;
+        padding:20px;
+        
+    }
+}
