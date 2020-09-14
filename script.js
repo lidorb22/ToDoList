@@ -2,13 +2,50 @@
 const todoInput= document.querySelector('.tein');
 const todoButton= document.querySelector('.subutt');
 const todoList= document.querySelector('.todo-list');
+const langEL= document.querySelector('.lang-warp');
+const links= document.querySelectorAll('a');
+const titleEl= document.querySelector('.title');
+const descEL= document.querySelector('.description');
+const boardEL = document.querySelector('.board-input');
+
+var data ={
+    "english":
+    {
+        "title": "Add",
+        "description":
+        "here you can write your tasks that you want to do and add them to the tasks board.",
+        "boardin":
+        "Tasks Board"
+    },
+    "hebrew":
+    {
+        "title": "הוסף",
+        "description":
+        "במקום הלבן ניתן לכתוב את המשימות שיש לכם לאחר מכן לחצו על הוסף.",
+        "boardin":
+        "!לוח משימות"
+    }
+}
 
 //event listeners
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', delteCehck);
 
 
+
 //functions
+
+links.forEach(el => {
+    el.addEventListener('click', () => {
+        langEL.querySelector('.active').classList.remove('active');
+        el.classList.add('active');
+
+        const attr = el.getAttribute('language');
+        titleEl.value = data[attr].title;
+        descEL.textContent = data[attr].description;
+        boardEL.textContent = data[attr].boardin;
+    });
+});
 
 function addTodo(event){
     event.preventDefault();
@@ -51,3 +88,4 @@ function delteCehck(event){
         todo.classList.toggle("completed");
     }
 }
+

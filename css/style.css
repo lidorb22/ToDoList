@@ -28,6 +28,29 @@ nav{
     display: flex;
     justify-content: center;
 }
+.lang-button{
+    position: absolute;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background:grey;
+    opacity: 0.50;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+.place{
+    top: 35px;
+    right: 140px;
+}
+.place1{
+    top: 35px;
+    right: 50px;
+}
+.active{
+    background: darkorange;
+    opacity: 0.95;
+}
 
 /* Nav Bar End */
 
@@ -190,9 +213,35 @@ p{
     letter-spacing: 10px;
 }
 
+@media only screen and (max-width: 600px){
+    .lang-button{
+        position: absolute;
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        background:grey;
+        opacity: 0.50;
+        width: 50px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .place{
+        top: 35px;
+        right: 80px;
+    }
+    .place1{
+        top: 35px;
+        right: 10px;
+    }
+    .active{
+        background: darkorange;
+        opacity: 0.95;
+    }
+} 
+
 /* the last place end */
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1770px){
     /* For tablets: */
     body{
         background: grey;

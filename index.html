@@ -15,10 +15,14 @@
             <nav>
                 <h1>ToDo<span>List</span></h1>
             </nav>
+            <div class="lang-warp">
+                <a onclick="return false;" href="" language='english' class="lang-button active place">En</a>
+                <a onclick="return false;" href="" language='hebrew' class="lang-button place1">He</a>
+            </div>
         </header>
         <main>
             <div class="page">
-                <h3>Tasks board</h3>
+                <h3 class="board-input">Tasks board</h3>
                 <div class="todo-con">
                     <ul class="todo-list">
 
@@ -28,10 +32,10 @@
             <div class="liststyle">
                 <form action="">
                     <textarea minlength="3" class="tein"></textarea><br>
-                    <input class="subutt" type="submit" value="Add">
+                    <input class="subutt title" type="submit" value="Add">
                 </form>
             </div>
-            <h2>here you can write your tasks that 
+            <h2 class="description">here you can write your tasks that 
                 you want to do and <span class="backg">add</span> them to the 
                 tasks board.
             </h2>
