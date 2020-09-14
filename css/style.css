@@ -237,6 +237,17 @@ p{
         background: darkorange;
         opacity: 0.95;
     }
+}
+
+@media only screen and (max-width: 450px){
+    .place{
+        top: 15px;
+        right: 20px;
+    }
+    .place1{
+        top: 55px;
+        right: 20px;
+    }
 } 
 
 /* the last place end */
